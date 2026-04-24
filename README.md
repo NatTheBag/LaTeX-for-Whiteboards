@@ -11,4 +11,4 @@ Usage:
 
 OR use binary of the same name. 
 
-Recommended setting (to be optimized): pen size 3 (Adobe Connect/MS Paint), Scale 0.4, point density medium to sparse. 
+Recommended setting (to be optimized): pen size 3 (Adobe Connect/MS Paint), Scale 0.4, point density medium to sparse (4.5). 

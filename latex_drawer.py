@@ -99,7 +99,7 @@ class LaTeXDrawer:
         controls = ttk.LabelFrame(main, text="Controls", padding="10")
         controls.grid(row=2, column=1, sticky=(tk.W, tk.E, tk.N, tk.S), pady=5)
         
-        self.draw_btn = ttk.Button(controls, text="Draw (D)", command=self.start_drawing)
+        self.draw_btn = ttk.Button(controls, text="Draw", command=self.start_drawing)
         self.draw_btn.pack(fill=tk.X, pady=5)
         
         self.stop_btn = ttk.Button(controls, text="Stop (ESC)", command=self.stop, state='disabled')
@@ -118,8 +118,6 @@ class LaTeXDrawer:
         main.rowconfigure(1, weight=1)
         
         self.root.bind('<Escape>', lambda e: self.stop())
-        self.root.bind('d', lambda e: self.start_drawing())
-        self.root.bind('D', lambda e: self.start_drawing())
         
     def set_latex(self, latex):
         self.latex_text.delete('1.0', tk.END)
